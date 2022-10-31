@@ -247,67 +247,60 @@ img {
   margin-top: 40px;
   margin-bottom: 12px;
 }
-.modal-wrapper {
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   display: block;
-  justify-content: center;
-  align-items: center;
+
+  top: 75px;
+  left: 40px;
+
   width: 448px;
   height: 342px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
-.modal-form {
-  position: relative;
-  margin-bottom: 10px;
-
+.form-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--third--text--color);
+  margin-bottom: 4px;
 }
-.modal-form input {
-  width: 448px;
+.form-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form-input {
+  width: 100%;
   height: 40px;
-  margin-top: 4px;
-  padding-left: 30px;
+  padding-left: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 .modal-user-icon {
   position: absolute;
-  top: 50%;
+  top: 11px;
   left: 12px;
-  fill: var(--main-text-color);
+  fill: currentColor;
 }
-.comment input {
+.comment {
+  width: 100%;
   height: 120px;
-}
-.modal-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--third--text--color);
-}
-.modal-checkbox-icon {
-  position: absolute;
-  top: 442px;
-  left: 52px;
-  fill: var(--main-text-color);
-}
-.modal-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: var(--accent-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-send-button {
   position: absolute;
@@ -352,6 +345,7 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-text-color);
+
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
@@ -360,7 +354,7 @@ img {
 .modal-button-close:focus {
   color: var(--accent-text-color);
 }
-.modal-icon {
+.modal-close-icon {
   fill: currentColor;
 }
 .benefits-list {
