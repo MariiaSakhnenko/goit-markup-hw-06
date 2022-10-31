@@ -280,11 +280,19 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+
+  transition: border var(--duration) var(--timing-function);
+}
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--accent-text-color);
+  border-radius: 4px;
 }
 .modal-user-icon {
   position: absolute;
   top: 11px;
   left: 12px;
+
   fill: currentColor;
 }
 .comment {
@@ -301,6 +309,40 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+
+  transition: border var(--duration) var(--timing-function);
+}
+.comment:hover,
+.comment:focus {
+  border: 1px solid var(--accent-text-color);
+  border-radius: 4px;
+}
+.checkbox-input {
+  position: absolute;
+  top: 362px;
+  left: 12px;
+
+  width: 16px;
+  height: 15px;
+}
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third--text--color);
+}
+.checkbox-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-text-color);
 }
 .modal-send-button {
   position: absolute;
